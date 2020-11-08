@@ -1,0 +1,31 @@
+[*]
+[*] GTKWave Analyzer v3.3.77 (w)1999-2016 BSI
+[*] Sat Nov 07 17:52:09 2020
+[*]
+[dumpfile] "C:\Users\gerar\Desktop\UVG\4to Semestre\Digital 1\LAB10\E1\p1_tb.vcd"
+[dumpfile_mtime] "Sat Nov 07 17:51:05 2020"
+[dumpfile_size] 4742
+[savefile] "C:\Users\gerar\Desktop\UVG\4to Semestre\Digital 1\LAB10\E1\p1_tb.gtkw"
+[timestart] 0
+[size] 1536 801
+[pos] -113 -113
+*-4.907605 85 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 197
+[signals_width] 281
+[sst_expanded] 1
+[sst_vpaned_height] 224
+@28
+testbench.Ea
+testbench.Eb
+testbench.PC[11:0]
+testbench.VAL[11:0]
+@29
+testbench.clk
+@28
+testbench.instr[3:0]
+testbench.load
+testbench.oprnd[3:0]
+testbench.prog_byte[7:0]
+testbench.reset
+[pattern_trace] 1
+[pattern_trace] 0
