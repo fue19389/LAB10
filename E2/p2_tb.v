@@ -4,22 +4,22 @@
 
 module testbench();
 
-  reg clk, reset, Ea, Eb, load;
-  reg[11:0]VAL;
-  wire[3:0]instr, oprnd;
-  wire[7:0]prog_byte;
-  wire[11:0]PC;
+  reg RST, CLK, EA, EB, EC;
+  reg[2:0] SLCT;
+  reg[3:0] D0;
+  wire CRRY, ZRO;
+  wire[3:0] OUTALU, OUTACCU, Q0, Q1;
 
-  part1  p1(clk, reset, Ea, Eb, load, VAL, instr, oprnd, prog_byte, PC);
+  part2  p2(RST, CLK, EA, EB, EC, SLCT, D0, CRRY, ZRO, OUTALU, OUTACCU, Q0, Q1);
 
   initial begin
-     clk = 0;
-     forever #1 clk = ~clk;
+     CLK = 0;
+     forever #1 CLK = ~CLK;
   end
 
   initial begin
-    reset = 1;
-    #1 reset = 0;
+    RST = 1;
+    #1 RST = 0;
   end
 
   initial begin
@@ -31,11 +31,12 @@ module testbench();
 
   end
 
+
   initial
     #100 $finish;
 
   initial begin
-    $dumpfile("p1_tb.vcd");
+    $dumpfile("p2_tb.vcd");
     $dumpvars(0, testbench);
   end
 
